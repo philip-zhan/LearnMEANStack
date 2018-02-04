@@ -43,7 +43,7 @@ require('./config/passport')(passport);
 
 app.use('/users', users);
 
-// index rout
+// index route
 app.get('/', (req, res) => {
     res.send('Invalid Endpoint');
 });
