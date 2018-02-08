@@ -27,7 +27,6 @@ export class LoginComponent implements OnInit {
     };
     this.authService.authenticateUser(user).subscribe(data => {
       if (data.success) {
-        console.log(1234);
         this.authService.storeUserData(data.token, data.user);
         this.flashMessages.show('登录成功', {
           cssClass: 'alert-success',
